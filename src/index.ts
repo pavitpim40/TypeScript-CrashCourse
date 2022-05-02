@@ -153,6 +153,7 @@ const emp = new Employee(3,"Shawn","Mendez","Developer")
 console.log(emp.register())
 
 // Generics == Placeholder of the Type
+
 // function getArray(items:any[]) : any[] {
 //     return new Array().concat(items)
 // }
