@@ -1,5 +1,5 @@
 "use strict";
-// Basic Type
+// ## BASIC TYPE
 let id = 4;
 let company = 'Traversy Media';
 let isPublished = true;
@@ -9,7 +9,7 @@ let age;
 let ids = [1, 2, 3, 4, 5];
 ids.push(5);
 let arr = [1, true, 'hello'];
-// Tuple (order is matter)
+// ## TUPLE (order is matter)
 let person = [1, 'Brad', true];
 // Tuple Array
 let employee;
@@ -18,10 +18,10 @@ employee = [
     [1, "Mean"],
     [5, "Pavit"],
 ];
-// Union
+// ## UNION
 let pid = 22;
 pid = '22';
-// Enum
+// ## ENUM
 var Direction1;
 (function (Direction1) {
     Direction1["Up"] = "Up";
@@ -41,12 +41,12 @@ const user = {
     id: 1,
     name: 'John'
 };
-// Type Assertion
+// ## TYPE ASSERTION
 let cid = 1;
 let customer = cid;
 // let customer = cid as number
 // customer = true //error
-// FUNCTION
+// ## FUNCTION
 function addNum(x, y) {
     return x + y;
 }
@@ -58,7 +58,12 @@ const user1 = {
     id: 1,
     name: 'John',
 };
-//user1.id =5 //error
-// Interface not work with primitive or Union
-// interface type Point = number | string
-// const p1:Point = 1
+const add = (a, b) => a + b;
+const sub = (a, b) => a - b;
+// ## CLASSES
+class Person {
+    constructor() {
+        console.log("123");
+    }
+}
+const brad = new Person();
